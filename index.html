@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Todo app example</title>
+
+  <script>
+    // Redux assumes `process.env.NODE_ENV` exists in the ES module build.
+    // https://github.com/reactjs/redux/issues/2907
+    window.process = { env: { NODE_ENV: 'production' } };
+  </script>
+
+</head>
+
+<body>
+  <app-element/>
+  <script type="module" src="./components/app-element.js"></script>
+</body>
+
+</html>
